@@ -24,19 +24,19 @@
         <img src="assets/images/logo/logo.png" alt="HALOVN logo" />
       </a>
       <nav class="nav" aria-label="Điều hướng chính">
-        <a href="index.html">Trang chủ</a>
-        <a href="about.html">Giới thiệu</a>
-        <a href="products.html">Sản phẩm</a>
-        <a href="wholesale.html">Chính sách sỉ</a>
-        <a href="for-brands.html">Hợp tác thương hiệu</a>
-        <a href="news.html">Tin tức</a>
-        <a href="contact.html">Liên hệ</a>
+        <a href="index.html" data-i18n="nav.home">Trang chủ</a>
+        <a href="about.html" data-i18n="nav.about">Giới thiệu</a>
+        <a href="products.html" data-i18n="nav.products">Sản phẩm</a>
+        <a href="wholesale.html" data-i18n="nav.wholesale">Chính sách sỉ</a>
+        <a href="for-brands.html" data-i18n="nav.forBrands">Hợp tác thương hiệu</a>
+        <a href="news.html" data-i18n="nav.news">Tin tức</a>
+        <a href="contact.html" data-i18n="nav.contact">Liên hệ</a>
       </nav>
       <a href="cart.html" class="cart-link" aria-label="Giỏ hàng">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
         <span class="cart-badge is-empty" data-cart-count>0</span>
       </a>
-      <a href="wholesale.html#register" class="btn btn--primary header__cta">Đăng ký đại lý</a>
+      <a href="wholesale.html#register" class="btn btn--primary header__cta" data-i18n="nav.register">Đăng ký đại lý</a>
       <button class="menu-toggle" aria-label="Mở menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -45,15 +45,15 @@
 
   <!-- Mobile drawer -->
   <div class="mobile-nav" aria-label="Menu di động">
-    <a href="index.html">Trang chủ</a>
-    <a href="about.html">Giới thiệu</a>
-    <a href="products.html">Sản phẩm</a>
-    <a href="wholesale.html">Chính sách sỉ</a>
-    <a href="for-brands.html">Hợp tác thương hiệu</a>
-    <a href="news.html">Tin tức</a>
-    <a href="contact.html">Liên hệ</a>
-    <a href="cart.html">Giỏ hàng</a>
-    <a href="wholesale.html#register" class="btn btn--primary">Đăng ký đại lý</a>
+    <a href="index.html" data-i18n="nav.home">Trang chủ</a>
+    <a href="about.html" data-i18n="nav.about">Giới thiệu</a>
+    <a href="products.html" data-i18n="nav.products">Sản phẩm</a>
+    <a href="wholesale.html" data-i18n="nav.wholesale">Chính sách sỉ</a>
+    <a href="for-brands.html" data-i18n="nav.forBrands">Hợp tác thương hiệu</a>
+    <a href="news.html" data-i18n="nav.news">Tin tức</a>
+    <a href="contact.html" data-i18n="nav.contact">Liên hệ</a>
+    <a href="cart.html" data-i18n="nav.cart">Giỏ hàng</a>
+    <a href="wholesale.html#register" class="btn btn--primary" data-i18n="nav.register">Đăng ký đại lý</a>
   </div>
 
   <main>
@@ -62,12 +62,12 @@
     <section class="hero">
       <div class="container hero__grid">
         <div>
-          <span class="eyebrow">Healthy and Beauty</span>
-          <h1 class="hero__title">Đơn vị phân phối <span class="hl">thực phẩm chức năng</span> hàng đầu Việt Nam</h1>
-          <p class="hero__lead">HALOVN nhập khẩu chính hãng và phân phối hơn 500 sản phẩm từ các thương hiệu uy tín thế giới — phục vụ nhà thuốc, phòng khám, spa, gym và reseller toàn quốc.</p>
+          <span class="eyebrow" data-i18n="index.heroEyebrow">Healthy and Beauty</span>
+          <h1 class="hero__title" data-i18n-html="index.heroTitle">Đơn vị phân phối <span class="hl">thực phẩm chức năng</span> hàng đầu Việt Nam</h1>
+          <p class="hero__lead" data-i18n="index.heroLead">HALOVN nhập khẩu chính hãng và phân phối hơn 500 sản phẩm từ các thương hiệu uy tín thế giới — phục vụ nhà thuốc, phòng khám, spa, gym và reseller toàn quốc.</p>
           <div class="hero__cta">
-            <a href="wholesale.html#register" class="btn btn--primary btn--lg">Đăng ký làm đại lý sỉ →</a>
-            <a href="for-brands.html" class="btn btn--outline btn--lg">Hợp tác thương hiệu →</a>
+            <a href="wholesale.html#register" class="btn btn--primary btn--lg" data-i18n="index.heroCtaAgent">Đăng ký làm đại lý sỉ →</a>
+            <a href="for-brands.html" class="btn btn--outline btn--lg" data-i18n="index.heroCtaBrand">Hợp tác thương hiệu →</a>
           </div>
         </div>
         <div class="hero__visual hero__banner" id="hero-banner" aria-label="Banner HALOVN">
@@ -91,19 +91,19 @@
         <div class="trust__grid">
           <div class="trust__item reveal">
             <div class="trust__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18l-2 12H5L3 7z"/><path d="M8 7V5a4 4 0 018 0v2"/></svg></div>
-            <div><div class="trust__num">500+</div><div class="trust__lbl">Sản phẩm</div></div>
+            <div><div class="trust__num">500+</div><div class="trust__lbl" data-i18n="index.trustProducts">Sản phẩm</div></div>
           </div>
           <div class="trust__item reveal">
             <div class="trust__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg></div>
-            <div><div class="trust__num">100%</div><div class="trust__lbl">Chính hãng</div></div>
+            <div><div class="trust__num">100%</div><div class="trust__lbl" data-i18n="index.trustAuthentic">Chính hãng</div></div>
           </div>
           <div class="trust__item reveal">
             <div class="trust__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
-            <div><div class="trust__num">Freeship</div><div class="trust__lbl">Toàn quốc</div></div>
+            <div><div class="trust__num">Freeship</div><div class="trust__lbl" data-i18n="index.trustFreeship">Toàn quốc</div></div>
           </div>
           <div class="trust__item reveal">
             <div class="trust__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-            <div><div class="trust__num">24/7</div><div class="trust__lbl">Hỗ trợ</div></div>
+            <div><div class="trust__num">24/7</div><div class="trust__lbl" data-i18n="index.trustSupport">Hỗ trợ</div></div>
           </div>
         </div>
       </div>
@@ -113,8 +113,8 @@
     <section class="section section--light">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">Thương hiệu chúng tôi phân phối</span>
-          <h2>Đối tác toàn cầu, chất lượng đảm bảo</h2>
+          <span class="eyebrow" data-i18n="index.brandsEyebrow">Thương hiệu chúng tôi phân phối</span>
+          <h2 data-i18n="index.brandsTitle">Đối tác toàn cầu, chất lượng đảm bảo</h2>
         </div>
         <div class="brands">
           <div class="brand reveal"><img src="assets/images/brands/marvis.png" alt="Marvis" loading="lazy" /></div>
@@ -141,30 +141,30 @@
     <section class="section">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">Tại sao chọn HALOVN</span>
-          <h2>Đối tác sỉ tin cậy cho hơn 500 sản phẩm</h2>
-          <p>Chúng tôi đồng hành cùng nhà thuốc, phòng khám, spa và reseller bằng giá tốt — hàng chính hãng — giao nhanh — hỗ trợ tận tâm.</p>
+          <span class="eyebrow" data-i18n="index.whyEyebrow">Tại sao chọn HALOVN</span>
+          <h2 data-i18n="index.whyTitle">Đối tác sỉ tin cậy cho hơn 500 sản phẩm</h2>
+          <p data-i18n="index.whyDesc">Chúng tôi đồng hành cùng nhà thuốc, phòng khám, spa và reseller bằng giá tốt — hàng chính hãng — giao nhanh — hỗ trợ tận tâm.</p>
         </div>
         <div class="grid grid--4">
           <div class="card reveal">
             <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
-            <h3>Giá sỉ cạnh tranh</h3>
-            <p>Chiết khấu theo bậc, ưu đãi riêng cho đại lý dài hạn.</p>
+            <h3 data-i18n="index.why1Title">Giá sỉ cạnh tranh</h3>
+            <p data-i18n="index.why1Desc">Chiết khấu theo bậc, ưu đãi riêng cho đại lý dài hạn.</p>
           </div>
           <div class="card reveal card--green">
             <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c2.39 0 4.68.94 6.36 2.64"/></svg></div>
-            <h3>Chính hãng 100%</h3>
-            <p>Đầy đủ giấy ủy quyền, hóa đơn VAT, tem chống giả.</p>
+            <h3 data-i18n="index.why2Title">Chính hãng 100%</h3>
+            <p data-i18n="index.why2Desc">Đầy đủ giấy ủy quyền, hóa đơn VAT, tem chống giả.</p>
           </div>
           <div class="card reveal">
             <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
-            <h3>Giao nhanh toàn quốc</h3>
-            <p>Kho Hà Nội & TP.HCM. Freeship đơn từ 1 triệu đồng.</p>
+            <h3 data-i18n="index.why3Title">Giao nhanh toàn quốc</h3>
+            <p data-i18n="index.why3Desc">Kho Hà Nội & TP.HCM. Freeship đơn từ 1 triệu đồng.</p>
           </div>
           <div class="card reveal card--green">
             <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></div>
-            <h3>Hỗ trợ chuyên sâu</h3>
-            <p>Tư vấn sản phẩm, tài liệu marketing, training bán hàng.</p>
+            <h3 data-i18n="index.why4Title">Hỗ trợ chuyên sâu</h3>
+            <p data-i18n="index.why4Desc">Tư vấn sản phẩm, tài liệu marketing, training bán hàng.</p>
           </div>
         </div>
       </div>
@@ -174,12 +174,12 @@
     <section class="section section--light">
       <div class="container">
         <div class="partner-cta reveal">
-          <span class="eyebrow" style="color:#5dd0f6">Dành cho thương hiệu quốc tế</span>
-          <h2>Bạn đang tìm đối tác phân phối tại Việt Nam?</h2>
-          <p>HALOVN đang xây dựng mạng lưới hợp tác dài hạn với các thương hiệu quốc tế muốn gia nhập và phát triển tại thị trường sức khoẻ & làm đẹp Việt Nam.</p>
+          <span class="eyebrow" style="color:#5dd0f6" data-i18n="index.partnerEyebrow">Dành cho thương hiệu quốc tế</span>
+          <h2 data-i18n="index.partnerTitle">Bạn đang tìm đối tác phân phối tại Việt Nam?</h2>
+          <p data-i18n="index.partnerDesc">HALOVN đang xây dựng mạng lưới hợp tác dài hạn với các thương hiệu quốc tế muốn gia nhập và phát triển tại thị trường sức khoẻ & làm đẹp Việt Nam.</p>
           <div class="partner-cta__actions">
-            <a href="for-brands.html" class="btn btn--green btn--lg">Trở thành đối tác →</a>
-            <a href="for-brands.html#capabilities" class="btn btn--ghost btn--lg">Xem năng lực của chúng tôi</a>
+            <a href="for-brands.html" class="btn btn--green btn--lg" data-i18n="index.partnerCta1">Trở thành đối tác →</a>
+            <a href="for-brands.html#capabilities" class="btn btn--ghost btn--lg" data-i18n="index.partnerCta2">Xem năng lực của chúng tôi</a>
           </div>
         </div>
       </div>
@@ -189,13 +189,13 @@
     <section class="section">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">Danh mục sản phẩm</span>
-          <h2>Sản phẩm tiêu biểu</h2>
-          <p>Đa dạng từ thực phẩm bổ sung, dinh dưỡng mẹ & bé tới sản phẩm chăm sóc da và sắc đẹp.</p>
+          <span class="eyebrow" data-i18n="index.featuredEyebrow">Danh mục sản phẩm</span>
+          <h2 data-i18n="index.featuredTitle">Sản phẩm tiêu biểu</h2>
+          <p data-i18n="index.featuredDesc">Đa dạng từ thực phẩm bổ sung, dinh dưỡng mẹ & bé tới sản phẩm chăm sóc da và sắc đẹp.</p>
         </div>
         <div class="grid grid--4" data-products-grid data-limit="4"></div>
         <div style="text-align:center; margin-top:40px" class="reveal">
-          <a href="products.html" class="btn btn--outline">Xem toàn bộ catalog</a>
+          <a href="products.html" class="btn btn--outline" data-i18n="index.featuredCta">Xem toàn bộ catalog</a>
         </div>
       </div>
     </section>
@@ -204,13 +204,13 @@
     <section class="section section--light">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">Tin tức</span>
-          <h2>Cập nhật từ HALOVN</h2>
+          <span class="eyebrow" data-i18n="index.newsEyebrow">Tin tức</span>
+          <h2 data-i18n="index.newsTitle">Cập nhật từ HALOVN</h2>
         </div>
         <!-- Render động từ news-data.js — chỉ hiện 3 bài mới nhất -->
         <div class="grid grid--3" data-news-grid data-limit="3"></div>
         <div style="text-align:center; margin-top:32px" class="reveal">
-          <a href="news.html" class="btn btn--outline">Xem tất cả tin tức →</a>
+          <a href="news.html" class="btn btn--outline" data-i18n="index.newsCta">Xem tất cả tin tức →</a>
         </div>
       </div>
     </section>
@@ -223,27 +223,27 @@
       <div class="footer__grid">
         <div class="footer__brand">
           <img src="assets/images/logo/logo.png" alt="HALOVN" />
-          <p>Công ty TNHH HALOVN — Đơn vị nhập khẩu và phân phối chính hãng thực phẩm chức năng, sản phẩm chăm sóc sức khỏe và sắc đẹp tại Việt Nam.</p>
+          <p data-i18n="footer.desc">Công ty TNHH HALOVN — Đơn vị nhập khẩu và phân phối chính hãng thực phẩm chức năng, sản phẩm chăm sóc sức khỏe và sắc đẹp tại Việt Nam.</p>
         </div>
         <div>
-          <h4>Liên kết</h4>
+          <h4 data-i18n="footer.links">Liên kết</h4>
           <ul>
-            <li><a href="about.html">Giới thiệu</a></li>
-            <li><a href="products.html">Sản phẩm</a></li>
-            <li><a href="wholesale.html">Chính sách sỉ</a></li>
-            <li><a href="for-brands.html">Hợp tác thương hiệu</a></li>
+            <li><a href="about.html" data-i18n="nav.about">Giới thiệu</a></li>
+            <li><a href="products.html" data-i18n="nav.products">Sản phẩm</a></li>
+            <li><a href="wholesale.html" data-i18n="nav.wholesale">Chính sách sỉ</a></li>
+            <li><a href="for-brands.html" data-i18n="nav.forBrands">Hợp tác thương hiệu</a></li>
           </ul>
         </div>
         <div>
-          <h4>Hỗ trợ</h4>
+          <h4 data-i18n="footer.support">Hỗ trợ</h4>
           <ul>
-            <li><a href="contact.html">Liên hệ</a></li>
-            <li><a href="news.html">Tin tức</a></li>
-            <li><a href="wholesale.html#register">Đăng ký đại lý</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Liên hệ</a></li>
+            <li><a href="news.html" data-i18n="nav.news">Tin tức</a></li>
+            <li><a href="wholesale.html#register" data-i18n="nav.register">Đăng ký đại lý</a></li>
           </ul>
         </div>
         <div>
-          <h4>Liên hệ</h4>
+          <h4 data-i18n="footer.contact">Liên hệ</h4>
           <ul class="footer__contact">
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> 58 NV1 Tổng Cục 5, Tân Triều, Thanh Trì, Hà Nội</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg> 0818 685 222</li>
@@ -257,7 +257,9 @@
       </div>
     </div>
   </footer>
-  <script src="assets/js/cart-store.js"></script>
+    <script src="assets/js/i18n.js?v=4"></script>
+  <script src="assets/js/lang-switcher.js?v=4"></script>
+<script src="assets/js/cart-store.js"></script>
 
   <script src="assets/js/products-data.js"></script>
   <script src="assets/js/products-list.js"></script>

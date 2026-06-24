@@ -96,8 +96,8 @@
             ${savePct ? `<span class="product__badge">-${savePct}%</span>` : ''}
           </div>
           <div class="product__actions">
-            <a href="${esc(detailHref)}" class="product__buy">Mua lẻ</a>
-            <a href="wholesale.html#register" class="product__wholesale">Lấy giá sỉ</a>
+            <a href="${esc(detailHref)}" class="product__buy" data-i18n="products.buyRetail">Mua lẻ</a>
+            <a href="wholesale.html#register" class="product__wholesale" data-i18n="products.wholesale">Lấy giá sỉ</a>
           </div>
         </div>
       </article>

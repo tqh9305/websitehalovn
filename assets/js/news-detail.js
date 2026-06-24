@@ -55,20 +55,31 @@
       </div>
 
       <div class="news-article__body">
-        ${article.content.map(p => `<p>${esc(p)}</p>`).join('')}
+        ${article.content.map(item => {
+          if (typeof item === 'object' && item.type === 'image') {
+            return `<figure class="news-article__figure"><img src="${esc(item.src)}" alt="${esc(item.alt || '')}" loading="lazy" /></figure>`;
+          }
+          if (typeof item === 'object' && item.type === 'heading') {
+            return `<h2 class="news-article__h2">${esc(item.text)}</h2>`;
+          }
+          if (typeof item === 'object' && item.type === 'list') {
+            return `<ul class="news-article__list">${item.items.map(li => `<li>${esc(li)}</li>`).join('')}</ul>`;
+          }
+          return `<p>${esc(item)}</p>`;
+        }).join('')}
       </div>
 
       <footer class="news-article__foot">
         <div class="news-article__share">
-          <a href="news.html" class="btn btn--outline">← Về danh sách tin tức</a>
-          <a href="contact.html" class="btn btn--primary">Liên hệ HALOVN →</a>
+          <a href="news.html" class="btn btn--outline" data-i18n="news.backToList">← Về danh sách tin tức</a>
+          <a href="contact.html" class="btn btn--primary" data-i18n="news.contactCta">Liên hệ HALOVN →</a>
         </div>
       </footer>
     </article>
 
     ${related.length ? `
     <section class="news-related">
-      <h2>Bài viết khác</h2>
+      <h2 data-i18n="news.related">Bài viết khác</h2>
       <div class="grid grid--3">
         ${related.map(renderCard).join('')}
       </div>
@@ -89,7 +100,7 @@
           <div class="news-card__date">${fmtDate(a.date)}</div>
           <h3 class="news-card__title"><a href="news-detail.html?slug=${esc(a.slug)}">${esc(a.title)}</a></h3>
           <p style="font-size:.9rem; color:var(--c-muted)">${esc(a.excerpt)}</p>
-          <a href="news-detail.html?slug=${esc(a.slug)}" class="news-card__cta">Đọc tiếp →</a>
+          <a href="news-detail.html?slug=${esc(a.slug)}" class="news-card__cta" data-i18n="news.readMore">Đọc tiếp →</a>
         </div>
       </article>
     `;
@@ -121,7 +132,7 @@
       <section style="padding: 64px 0; text-align:center;">
         <h1 style="color:var(--c-navy)">Không tìm thấy bài viết</h1>
         <p style="color:var(--c-muted); max-width:480px; margin: 12px auto 28px;">${esc(msg)}</p>
-        <a href="news.html" class="btn btn--primary">← Về danh sách tin tức</a>
+        <a href="news.html" class="btn btn--primary" data-i18n="news.backToList">← Về danh sách tin tức</a>
       </section>
     `;
   }

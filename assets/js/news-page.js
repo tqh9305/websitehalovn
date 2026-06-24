@@ -29,7 +29,7 @@
           <div class="news-card__date">${fmtDate(a.date)}</div>
           <h3 class="news-card__title"><a href="${href}">${esc(a.title)}</a></h3>
           ${a.excerpt ? `<p style="font-size:.9rem; color:var(--c-muted)">${esc(a.excerpt)}</p>` : ''}
-          <a href="${href}" class="news-card__cta">Đọc tiếp →</a>
+          <a href="${href}" class="news-card__cta" data-i18n="news.readMore">Đọc tiếp →</a>
         </div>
       </article>
     `;
